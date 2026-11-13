@@ -1,0 +1,24 @@
+# /etc/cf-ddns/cf-ddns.conf   （chmod 600，内含密钥）
+
+# Cloudflare API Token（必填）
+# 创建：https://dash.cloudflare.com/profile/api-tokens → Create Token → "Edit zone DNS" 模板
+# 权限：Zone - Zone - Read  +  Zone - DNS - Edit
+# Zone Resources：Include - All zones（这样以后新加的域名也自动覆盖）
+CF_API_TOKEN=""
+
+# 检测哪些协议
+ENABLE_IPV4=1
+ENABLE_IPV6=0
+
+# 只处理这些域名（空格分隔）；留空 = Token 能访问的全部域名
+ZONES=""
+
+# 额外强制指向本机 IP 的记录（即使它们当前不是旧 IP），完整域名，空格分隔
+EXTRA_RECORDS=""
+
+# 永远不要改的记录，完整域名，空格分隔
+EXCLUDE_RECORDS=""
+
+# 可选：IP 变化后发 Telegram 通知
+TG_BOT_TOKEN=""
+TG_CHAT_ID=""
