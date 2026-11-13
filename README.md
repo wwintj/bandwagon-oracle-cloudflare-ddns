@@ -1,4 +1,4 @@
-# cf-ddns
+# bandwagon-oracle-cloudflare-ddns
 
 VPS 公网 IP 变了，自动把 Cloudflare 上的 DNS 记录改成新 IP。适用于甲骨文换 IP、搬瓦工换机房、各类动态 IP 机器。
 
@@ -13,7 +13,7 @@ VPS 公网 IP 变了，自动把 Cloudflare 上的 DNS 记录改成新 IP。适�
 用 root 执行：
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/cf-ddns/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/bandwagon-oracle-cloudflare-ddns/main/install.sh)
 ```
 
 按提示填写 Cloudflare API Token 等信息即可。之后再执行同一条命令，会出现管理菜单：重新配置、更新、检查、查看日志、卸载。
@@ -21,7 +21,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/cf-ddns/main/install.
 ### 非交互安装（批量部署）
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/cf-ddns/main/install.sh) install \
+bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/bandwagon-oracle-cloudflare-ddns/main/install.sh) install \
   --token 你的Token --zone example.com --record vps.example.com
 ```
 

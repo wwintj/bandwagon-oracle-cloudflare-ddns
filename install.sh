@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # =============================================================================
 # cf-ddns 一键安装 / 管理脚本
-#   bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/cf-ddns/main/install.sh)
+#   bash <(curl -fsSL https://raw.githubusercontent.com/wwintj/bandwagon-oracle-cloudflare-ddns/main/install.sh)
 #
 # 非交互安装（适合批量部署）：
 #   bash <(curl -fsSL .../install.sh) install --token XXX --zone example.com --record vps.example.com
@@ -9,7 +9,7 @@
 # =============================================================================
 set -euo pipefail
 
-REPO_RAW="${CF_DDNS_REPO_RAW:-https://raw.githubusercontent.com/wwintj/cf-ddns/main}"
+REPO_RAW="${CF_DDNS_REPO_RAW:-https://raw.githubusercontent.com/wwintj/bandwagon-oracle-cloudflare-ddns/main}"
 BIN=/usr/local/bin/cf-ddns.sh
 CONF_DIR=/etc/cf-ddns
 CONF=$CONF_DIR/cf-ddns.conf
